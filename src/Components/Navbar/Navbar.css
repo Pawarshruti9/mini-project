@@ -1,0 +1,54 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+   
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color:#dddddd;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 500px;
+}
+.nav-menu li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #F8B195;
+}
+.nav-quote button{
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border-radius: 75px;
+    border: 1px solid #626262;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+.nav-logo{
+    height: 10%;
+    width: 30%;
+   
+}

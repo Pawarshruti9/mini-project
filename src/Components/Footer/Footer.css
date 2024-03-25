@@ -1,0 +1,97 @@
+/* Apply styles to the footer element */
+.footer {
+  background-color: #dddddd;
+}
+
+.footersection-padding {
+  padding: 20px; /* Adjust as needed */
+}
+
+.footerlinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerlinksdiv {
+  width: 33.33%; /* Each section takes 1/3 of the width */
+}
+
+.mailing {
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+
+.mailing input[type="text"] {
+  border: none;
+  width: 400px;
+  border-bottom: 1px solid black; /* Add underline */
+  outline: none; /* Remove default input focus outline */
+  display: block; /* Display inputs as block elements */
+  margin-bottom: 10px; /* Add some vertical space between inputs */
+}
+
+.follow img {
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.explorepg ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+.explorepg ul a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.copyright img {
+  width: 100px; /* Adjust as needed */
+}
+.copyright {
+  align-self: flex-end; /* Align the div to the left side of the footer */
+  margin-left: 20px; /* Adjust margin as needed */
+}
+.subscribe {
+  background-color: #dddd;
+  border-radius: 3px;
+  /* border: 1px solid #b87490; */
+  
+  /* box-shadow: rgba(246, 222, 222, 0.7) 0 1px 0 0 inset; */
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.subscribe:hover,
+.subscribe:focus {
+  background-color: #fff;
+  color: black;
+}
+
+.subscribe:focus {
+  box-shadow: 0 0 0 4px rgba(244, 175, 184, 0.15);
+}
+
+.subscribe:active {
+  background-color: #dddddd;
+  box-shadow: none;
+  color: black;
+}

@@ -1,0 +1,53 @@
+.home-container {
+  /* Background image */
+  background-image: url('../../Components/Assets/Construction.jpeg');
+  /* Set background size and position */
+  background-size: cover; /* Use 'cover' to scale the background image to cover the entire container */
+  background-position: center; /* Center the background image */
+  /* Other styles */
+  padding: 80px; /* Adjust padding as needed */
+  text-align: center;
+  width: 75%; /* Adjust width as needed */
+  border-radius: 30px;
+  height: 600px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 100px ;
+}
+
+.home-container .centered {
+  /* Center the content vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container h1 {
+  font-size: 85px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  color: #fff; /* Moved color property here for consistency */
+}
+
+.home-container p {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.home-container button {
+  padding: 10px 20px;
+  font-size: 30px;
+  background-color: #b7aeae;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 75px;
+}
+
+.home-container button:hover {
+  background-color: #0056b3;
+}
