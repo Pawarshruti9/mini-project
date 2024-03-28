@@ -23,7 +23,7 @@ const Homepg = () => {
 
       <div></div>
 
-      <section className='aboutus'>
+      <section id='about' className='aboutus'>
         <h2><u>About Us</u></h2>
         <div className='about-container'>
           <div className='about-content'>
@@ -44,7 +44,7 @@ const Homepg = () => {
 
       <div></div>
       
-      <section className="services">
+      <section id='services' className="services">
         <h2><u>Our Services</u></h2>
 
         <div className="services-container">

@@ -82,7 +82,7 @@
     left: 0;
     /* z-index: 1000; */
     display: none;
-    min-width: 180px; /* Adjust dropdown width as needed */
+    min-width: 170px; /* Adjust dropdown width as needed */
     padding: 10px;
     /* height: 200px; */
     background-color: #fff;
@@ -101,6 +101,7 @@
     color: #333; /* Adjust link color */
     text-decoration: none;
     transition: background-color 0.3s ease;
+    width: 170px;
 }
 
 .dropdown-menu a:hover {
@@ -111,4 +112,12 @@
 .nav-menu li:hover .dropdown-menu {
     display: block;
     opacity: 1; 
+}
+.contact{
+    color: #4f7097;
+}
+.contact:hover{
+        color: #c37857;
+    
+    
 }

@@ -25,11 +25,13 @@ const Navbar = () => {
         </div>
         <ul className='nav-menu'>
             <li onClick={()=> setMenu("home")}><Link style={{textDecoration:'none'}} to='/'>Home</Link>{ menu==="home"?<hr/>:<></> }</li>
-            <li onClick={()=> setMenu("about")}><Link style={{textDecoration:'none'}} to='/about'>About Us</Link> { menu==="about"?<hr/>:<></> }</li>
-            <li onClick={()=> setMenu("service")}><Link style={{textDecoration:'none'}} to='/services'>Services</Link> { menu==="service"?<hr/>:<></> }</li>
-            <li className="dropdown" onClick={toggleContactMenu}>
-                <div>Contact Us <FontAwesomeIcon icon={faAngleDown} /></div>
+            <li onClick={()=> setMenu("about")}><a href="#about">About Us</a>{ menu==="about"?<hr/>:<></> }</li>
+            <li onClick={()=> setMenu("service")}><a href="#services">Services</a> { menu==="service"?<hr/>:<></> }</li>
+            <li className="dropdown" onClick={toggleContactMenu}  > 
+                <div className='contact'>Contact Us <FontAwesomeIcon icon={faAngleDown}  /></div>
                 {contactMenuOpen && (
+                  <>
+                  <hr/>
                   <ul className="dropdown-menu">
                     <li onClick={() => handleContactItemClick("enquiry")}>
                       <Link style={{ textDecoration: 'none' }} to='/enquiry'>Enquiry Form</Link>
@@ -38,6 +40,7 @@ const Navbar = () => {
                       <Link style={{ textDecoration: 'none' }} to='/visit'>Visit Form</Link>
                     </li>
                   </ul>
+                  </>
                 )}
             </li>
         </ul>
