@@ -130,3 +130,11 @@
     display: block;
     opacity: 1; 
 }
+.contact{
+    color: #4f7097;
+}
+.contact:hover{
+        color: #c37857;
+    
+    
+}

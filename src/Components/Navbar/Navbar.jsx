@@ -30,6 +30,8 @@ const Navbar = () => {
             <li className="dropdown" onClick={toggleContactMenu}>
                 <div className='contact'>Contact Us <FontAwesomeIcon icon={faAngleDown} /></div>
                 {contactMenuOpen && (
+                  <>
+                  <hr/>
                   <ul className="dropdown-menu">
                     <li onClick={() => handleContactItemClick("enquiry")}>
                       <Link style={{ textDecoration: 'none' }} to='/enquiry'>Enquiry Form</Link>
@@ -38,6 +40,7 @@ const Navbar = () => {
                       <Link style={{ textDecoration: 'none' }} to='/visit'>Visit Form</Link>
                     </li>
                   </ul>
+                  </>
                 )}
             </li>
         </ul>
