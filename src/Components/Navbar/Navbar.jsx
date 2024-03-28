@@ -1,23 +1,48 @@
 import React, { useState } from 'react';
-import './Navbar.css'
-import logo from '../Assets/Yamai.png'
+import './Navbar.css';
+import logo from '../Assets/Yamai.png';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
-   const [menu,setMenu] = useState("home");
-  return (
+   const [menu, setMenu] = useState("home");
+   const [contactMenuOpen, setContactMenuOpen] = useState(false);
+
+   const toggleContactMenu = () => {
+      setContactMenuOpen(!contactMenuOpen);
+   };
+
+   const handleContactItemClick = (menuItem) => {
+      setMenu(menuItem);
+      setContactMenuOpen(false); // Close the dropdown menu after clicking an item
+   };
+
+   return (
     <div className='navbar'>
         <div className='nav-logo'>
             <img src={logo} alt="Logo" />
         </div>
         <ul className='nav-menu'>
-            <li onClick={()=>{setMenu("home")}}><Link  style={{textDecoration:'none'}} to='/'>Home</Link>{ menu==="home"?<hr/>:<></> }</li>
-            <li  onClick={()=>{setMenu("about")}}><Link style={{textDecoration:'none'}} to='/about'>About Us</Link> { menu==="about"?<hr/>:<></> }</li>
-            <li  onClick={()=>{setMenu("service")}}><Link style={{textDecoration:'none'}} to='/services'>Services</Link> { menu==="service"?<hr/>:<></> }</li>
-            <li onClick={()=>{setMenu("contact")}}><Link style={{textDecoration:'none'}} to='/contact'>Contact Us</Link> { menu==="contact"?<hr/>:<></> } </li>
+            <li onClick={()=> setMenu("home")}><Link style={{textDecoration:'none'}} to='/'>Home</Link>{ menu==="home"?<hr/>:<></> }</li>
+            <li onClick={()=> setMenu("about")}><Link style={{textDecoration:'none'}} to='/about'>About Us</Link> { menu==="about"?<hr/>:<></> }</li>
+            <li onClick={()=> setMenu("service")}><Link style={{textDecoration:'none'}} to='/services'>Services</Link> { menu==="service"?<hr/>:<></> }</li>
+            <li className="dropdown" onClick={toggleContactMenu}>
+                <div>Contact Us <FontAwesomeIcon icon={faAngleDown} /></div>
+                {contactMenuOpen && (
+                  <ul className="dropdown-menu">
+                    <li onClick={() => handleContactItemClick("enquiry")}>
+                      <Link style={{ textDecoration: 'none' }} to='/enquiry'>Enquiry Form</Link>
+                    </li>
+                    <li onClick={() => handleContactItemClick("visit")}>
+                      <Link style={{ textDecoration: 'none' }} to='/visit'>Visit Form</Link>
+                    </li>
+                  </ul>
+                )}
+            </li>
         </ul>
         <div className='nav-quote'>
-            <button>Get Quota</button>
+            <button>Get Quote</button>
         </div>
     </div>
   );

@@ -3,14 +3,12 @@
     justify-content: space-around;
     padding: 16px;
     box-shadow: 0 1px 3px -2px black;
-   
-}
-.navbar{
-    display: flex;
     align-items: center;
     gap: 10px;
     background-color:#dddddd;
+   
 }
+
 .nav-menu{
     display: flex;
     align-items: center;
@@ -19,6 +17,7 @@
     color: #626262;
     font-size: 20px;
     font-weight: 500px;
+    position: relative;
 }
 .nav-menu li{
     display: flex;
@@ -28,6 +27,21 @@
     gap: 3px;
     cursor: pointer;
 }
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #4f7097;
+    
+}
+
+.nav-menu li a:hover {
+    color: #c37857;
+}
+
+.nav-menu li.dropdown > a {
+    color: #4f7097; /* Specific color for Contact Us link */
+}
+
 .nav-menu hr{
     border: none;
     width: 80%;
@@ -51,4 +65,50 @@
     height: 10%;
     width: 30%;
    
+}
+
+.nav-menu {
+    /* Your existing styles */
+    position: relative; /* Ensure the parent is positioned */
+}
+
+.nav-menu li {
+    position: relative; /* Ensure dropdown menu is relative to this item */
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* z-index: 1000; */
+    display: none;
+    min-width: 180px; /* Adjust dropdown width as needed */
+    padding: 10px;
+    /* height: 200px; */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow */
+    border-radius: 4px;
+    transition: opacity 0.3s ease;  
+}
+
+.dropdown-menu li {
+    margin-bottom: 2px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    color: #333; /* Adjust link color */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+/* Show dropdown menu on hover */
+.nav-menu li:hover .dropdown-menu {
+    display: block;
+    opacity: 1; 
 }

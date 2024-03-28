@@ -1,10 +1,13 @@
 import React from 'react';
-import Contactpage from '../Components/Conatcts/Contactme.jsx';
+import Enquiry from '../Components/Contacts/Enquiry.jsx';
+import Visit from '../Components/Contacts/Visit.jsx';
+
 
 const Contact = () => {
   return (
     <div>
-        <Contactpage/>
+        <Enquiry/>
+        <Visit/>
     </div>
   );
 }
