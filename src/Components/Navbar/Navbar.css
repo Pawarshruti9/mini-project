@@ -26,6 +26,7 @@
     justify-content: center;
     gap: 3px;
     cursor: pointer;
+    position: relative;
 }
 
 .nav-menu li a {
@@ -71,23 +72,6 @@
 .nav-logo img {
     width: 100%;
     height: auto;
-}
-
-.nav-menu {
-    /* Your existing styles */
-    position: relative; /* Ensure the parent is positioned */
-}
-
-.nav-menu li {
-    position: relative; /* Ensure dropdown menu is relative to this item */
-}
-
-.contact{
-    color: #4f7097;
-}
-
-.contact:hover{
-    color: #c37857;
 }
 
 .dropdown-menu {
