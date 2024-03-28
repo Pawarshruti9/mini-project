@@ -8,23 +8,28 @@ import agencies from '../Assets/agencies.jpg';
 import enterprises from '../Assets/enterprises.jpg';
 import energy from '../Assets/energy.jpg';
 import about from '../Assets/about.jpg'
-// import Construct from '../../Components/Assets/Construction.jpeg';
+import CountUp from "react-countup";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrophy, faClock, faSmile, faUsers } from '@fortawesome/free-solid-svg-icons'; // Import different icons
+
+
 
 const Homepg = () => {
   return (
-    <div className="maincontainer">
-      <section className="home-container">
+    <section id='home' className="maincontainer">
+      <div className="home-container">
         <div className="centered">
           <h1>Welcome to Our Website</h1>
           <p>Discover amazing content and services</p>
           <button>Explore</button>
         </div>
-      </section>
+      </div>
 
       <div></div>
 
-      <section className='aboutus'>
-        <h2><u>About Us</u></h2>
+      <section id='about' className='aboutus'>
+        <div><h2 className='heading-with-line'>About Us</h2></div>
+        
         <div className='about-container'>
           <div className='about-content'>
             <div className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis voluptatum perspiciatis nisi voluptatem ab assumenda debitis saepe dolores quaerat temporibus dolor pariatur, delectus deserunt, suscipit vel eligendi vero nulla qui! Quidem iste consequuntur maiores.
@@ -37,15 +42,50 @@ const Homepg = () => {
             <div className="btn">
               <button><Link to="/about">Know More</Link></button>
             </div>
+
           </div>
           <div className="about-image"><img src='' alt="" /></div>
         </div>
+          
+        <div className="flexCenter stats">
+              <div className="flexColCenter stat">
+                <span>
+                  <CountUp start={450} end={600} duration={4} /> <span>+</span>
+                </span> <br />
+                <span className="secondaryText">Complete Projects</span>
+                <FontAwesomeIcon icon={faTrophy} className="icon" />
+              </div>
+
+              <div className="flexColCenter stat">
+                <span>
+                  <CountUp  end={35} duration={4} /> <span>+</span>
+                </span> <br />
+                <span className="secondaryText">Years of Experience</span>
+                <FontAwesomeIcon icon={faClock} className="icon" />
+              </div>
+
+              <div className="flexColCenter stat">
+                <span>
+                  <CountUp end={95} /> <span>+</span>
+                </span> <br />
+                <span className="secondaryText">Happy Clients</span>
+                <FontAwesomeIcon icon={faSmile} className="icon" />
+              </div>
+
+              <div className="flexColCenter stat">
+                <span>
+                  <CountUp start={150} end={200} duration={4} /> <span>+</span>
+                </span> <br />
+                <span className="secondaryText">Professional Team</span>
+                <FontAwesomeIcon icon={faUsers} className="icon" />
+              </div>
+          </div>
       </section>
 
       <div></div>
       
-      <section className="services">
-        <h2><u>Our Services</u></h2>
+      <section id="services" className="services">
+        <h2 className='heading-with-line'>Our Services</h2>
 
         <div className="services-container">
           <div className="services-box">
@@ -57,7 +97,6 @@ const Homepg = () => {
               <Link to="/Construction">
                 <a href="#"><i className="bx bx-link-external"></i></a>
               </Link>
-
             </div>  
           </div>
 
@@ -126,7 +165,7 @@ const Homepg = () => {
         </div>
       </section>
 
-    </div>
+    </section>
   );
 };
 

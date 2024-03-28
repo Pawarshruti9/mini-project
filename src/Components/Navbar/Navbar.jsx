@@ -19,16 +19,16 @@ const Navbar = () => {
    };
 
    return (
-    <div className='navbar'>
+    <div className='navbar' style={{ position: 'sticky', top: '0', zIndex: '1000' }}>
         <div className='nav-logo'>
             <img src={logo} alt="Logo" />
         </div>
         <ul className='nav-menu'>
-            <li onClick={()=> setMenu("home")}><Link style={{textDecoration:'none'}} to='/'>Home</Link>{ menu==="home"?<hr/>:<></> }</li>
-            <li onClick={()=> setMenu("about")}><Link style={{textDecoration:'none'}} to='/about'>About Us</Link> { menu==="about"?<hr/>:<></> }</li>
-            <li onClick={()=> setMenu("service")}><Link style={{textDecoration:'none'}} to='/services'>Services</Link> { menu==="service"?<hr/>:<></> }</li>
+            <li onClick={()=> setMenu("home")}><a href="#home">Home</a> { menu==="home"?<hr/>:<></> }</li>
+            <li onClick={()=> setMenu("about")}><a href="#about">About Us</a> { menu==="about"?<hr/>:<></> }</li>
+            <li onClick={()=> setMenu("service")}><a href="#services">Services</a> { menu==="service"?<hr/>:<></> }</li>
             <li className="dropdown" onClick={toggleContactMenu}>
-                <div>Contact Us <FontAwesomeIcon icon={faAngleDown} /></div>
+                <div className='contact'>Contact Us <FontAwesomeIcon icon={faAngleDown} /></div>
                 {contactMenuOpen && (
                   <ul className="dropdown-menu">
                     <li onClick={() => handleContactItemClick("enquiry")}>

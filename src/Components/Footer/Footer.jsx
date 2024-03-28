@@ -17,7 +17,7 @@ const Footerpg = () => {
             <div className='footerlinksdiv'>
               <h3>Get in Touch</h3>
               <p>
-                <a href="https://www.google.com/maps/place/Yamai+Construction/@17.6602835,75.9040755,20.75z/data=!4m15!1m8!3m7!1s0x3bc5da768c001f2d:0x3f15d49126a59198!2sVIP+Rd,+Solapur,+Maharashtra!3b1!8m2!3d17.6616793!4d75.9031561!16s%2Fg%2F11bymy8t6l!3m5!1s0x3bc5db130b8cba43:0x2c80243872a14c7f!8m2!3d17.6604773!4d75.9041497!16s%2Fg%2F11g2wlhdxh?entry=ttu" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.google.com/maps/place/Yamai+Construction/@17.6602835,75.9040755,20.75z/data=!4m15!1m8!3m7!1s0x3bc5da768c001f2d:0x3f15d49126a59198!2sVIP+Rd,+Solapur,+Maharashtra!3b1!8m2!3d17.6616793!4d75.9031561!16s%2Fg%2F11bymy8t6l!3m5!1s0x3bc5db130b8cba43:0x2c80243872a14c7f!8m2!3d17.6604773!4d75.9041497!16s%2Fg%2F11g2wlhdxh?entry=ttu" target="_blank" rel="noopener noreferrer" >
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d282.9845345466078!2d75.90407553244754!3d17.660283536778035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5db130b8cba43%3A0x2c80243872a14c7f!2sYamai%20Construction!5e0!3m2!1sen!2sin!4v1711594719667!5m2!1sen!2sin" width="400" height="300" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </a>
               </p>
