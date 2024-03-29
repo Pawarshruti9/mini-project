@@ -67,6 +67,7 @@
     width: 180px; 
     display: flex;
     align-items: center;
+    
 }
 
 .nav-logo img {
@@ -82,7 +83,7 @@
     /* z-index: 1000; */
     display: none;
     min-width: 130px; 
-    height: 65px;
+    height: 70px;
     padding: 6px;
     /* height: 200px; */
     background-color: white;

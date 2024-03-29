@@ -35,7 +35,7 @@ const Homepg = () => {
             <div className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis voluptatum perspiciatis nisi voluptatem ab assumenda debitis saepe dolores quaerat temporibus dolor pariatur, delectus deserunt, suscipit vel eligendi vero nulla qui! Quidem iste consequuntur maiores.
             </div>
             <div className='para2'>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vero.</p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vero.
             </div>
             <div className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis voluptatum perspiciatis nisi voluptatem ab assumenda debitis saepe dolores.
             </div>

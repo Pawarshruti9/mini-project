@@ -82,12 +82,14 @@ section{
 }
 
 .about-content .para{
-  font-size: 13px;
+  font-size: 16px;
+  margin-top: 20px;
 }
 
 .about-content .para2{
-  font-size: 34px;
+  font-size: 39px;
   color: #295f4e;
+  margin-top: 20px;
 }
 
 .about-content .btn button{
@@ -176,7 +178,7 @@ section{
 
 .stats .stat {
   position: relative;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 110px;
 }
 
