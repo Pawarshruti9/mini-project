@@ -1,6 +1,14 @@
-/* styles.css */
+.aboutcompany {
+  width: 1200px;
+}
 
-/* styles.css */
+/* .aboutcompany .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} */
 
 body {
   font-family: Arial, sans-serif;
