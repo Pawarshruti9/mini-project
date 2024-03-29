@@ -24,9 +24,9 @@ const Navbar = () => {
             <img src={logo} alt="Logo" />
         </div>
         <ul className='nav-menu'>
-            <li onClick={()=> setMenu("home")}><a href="#home">Home</a> { menu==="home"?<hr/>:<></> }</li>
-            <li onClick={()=> setMenu("about")}><a href="#about">About Us</a> { menu==="about"?<hr/>:<></> }</li>
-            <li onClick={()=> setMenu("service")}><a href="#services">Services</a> { menu==="service"?<hr/>:<></> }</li>
+            <li onClick={()=> setMenu("home")}><a href="/#home">Home</a> { menu==="home"?<hr/>:<></> }</li>
+            <li onClick={()=> setMenu("about")}><a href="/#about">About Us</a> { menu==="about"?<hr/>:<></> }</li>
+            <li onClick={()=> setMenu("service")}><a href="/#services">Services</a> { menu==="service"?<hr/>:<></> }</li>
             <li className="dropdown" onClick={toggleContactMenu}>
                 <div className='contact'>Contact Us <FontAwesomeIcon icon={faAngleDown} /></div>
                 {contactMenuOpen && (

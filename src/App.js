@@ -2,7 +2,7 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import About from './Pages/About';
+import Aboutus from './Pages/About';
 import Homepg from './Pages/Home';
 import Contact from './Pages/Contactus';
 import Construction from './Pages/Services/Construction';
@@ -21,11 +21,11 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Homepg />} />
-          <Route path='/about' element={<About />} />
+          <Route path='/about' element={<Aboutus />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/enquiry' element={<Enquiry />} />
-          <Route path='/visit' element={<Visit />} />
-          <Route path='/Construction' element={<Construction />} />
+            <Route path='/visit' element={<Visit />} />
+            <Route path='/Construction' element={<Construction />} />
           <Route path='/Crusher' element={<Crusher />} />
           <Route path='/Bricks' element={<Bricks />} />
           <Route path='/Agencies' element={<Agencies />} />
