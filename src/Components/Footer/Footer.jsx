@@ -56,11 +56,11 @@ const Footerpg = () => {
           <div className='explorepg'>
             <h3>Explore</h3>
             <ul className='pages'>
-              <a href="#">Home</a>
-              <a href="">About</a>
-              <a href="">Services</a>
-              <a href="">Contact us</a>
-              <a href="">Review</a>
+              <a href="/#home">Home</a>
+              <a href="/#about">About</a>
+              <a href="/#services">Services</a>
+              <a href="/">Contact us</a>
+              <a href="">Testimonials</a>
 
             </ul>
           </div>

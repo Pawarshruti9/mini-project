@@ -21,7 +21,7 @@ const Homepg = () => {
         <div className="centered">
           <h1>Welcome to Our Website</h1>
           <p>Discover amazing content and services</p>
-          <button>Explore</button>
+          <button> <Link to="/about">Explore</Link></button>
         </div>
       </div>
 
