@@ -1,0 +1,119 @@
+.aboutcompany {
+  width: 1200px;
+  padding: 0 120px 20px 160px;
+}
+
+.aboutcompany .aboutcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.aboutimage {
+  background-image: url('../../Components/Assets/road1.jpg');
+  background-size: cover; 
+  background-position: center; 
+  padding: 80px; 
+  text-align: center;
+  width: 113%; 
+  height: 532px; 
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* margin-left: 90px ; */
+}
+
+.aboutimage .centered {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;  */
+  align-items: center;
+}
+
+.aboutimage h2 {
+  font-size: 75px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.aboutimage p {
+  font-size: 20px;
+  color: #dde0ab;
+  margin-bottom: 20px;
+}
+
+.aboutmission {
+  display: flex;
+  align-items: center;
+  width: 113%;
+  justify-content: center;
+  margin-right: 50px;
+  /* margin: 0 auto; */
+}
+
+.missioncontent {
+  max-width: 70%; 
+  margin-right: 60;
+}
+
+.missioncontent h3 {
+  font-size: 60px; 
+  /* margin-bottom: 20px;  */
+}
+
+.missioncontent p {
+  font-size: 16px;
+  line-height: 1.5; 
+}
+
+.missionimage {
+  /* display: flex; */
+  /* justify-content: space-around; */
+  align-items: center;
+  margin-top: 50px;
+}
+
+.missionimage img {
+  max-width: 113%; 
+  border-radius: 10px; 
+}
+
+.aboutvision {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  /* margin-right: 100px; */
+  /* margin: 0 auto; */
+}
+
+.visioncontent {
+  max-width: 70%; 
+  margin-left: 60px;
+}
+
+.visioncontent h3 {
+  font-size: 60px; 
+  margin-bottom: 20px; 
+}
+
+.visioncontent p {
+  font-size: 16px;
+  line-height: 1.5; 
+}
+
+.visionimage {
+  margin-top: 50px;
+  /* margin-right: 100px; */
+}
+
+.visionimage img {
+  max-width: 100%; 
+  border-radius: 10px; 
+}
+
+
