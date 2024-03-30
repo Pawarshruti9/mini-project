@@ -1,6 +1,7 @@
 import React, { useState , useEffect} from 'react';
 import './Enquiry.css'; // Import the CSS file
 import emailjs from 'emailjs-com';
+import Footerpg from '../Footer/Footer';
 
 const Enquiry = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -45,6 +46,7 @@ const Enquiry = () => {
 
 
   return (
+    <div>
     <div className="contact-container">
       <form onSubmit={handleSubmit}>
         <h2>Contact Us</h2>
@@ -63,6 +65,8 @@ const Enquiry = () => {
         <button type="submit">Submit</button>
       </form>
       {submitted && <div className="success-message">Form submitted successfully!</div>}
+    </div>
+    <Footerpg/>
     </div>
   );
 }

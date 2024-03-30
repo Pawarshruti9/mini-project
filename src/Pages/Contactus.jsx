@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div>
         <Enquiry/>
-        <Visit/>
+        <Visit/>     
     </div>
   );
 }
