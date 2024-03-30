@@ -14,6 +14,7 @@ import { faTrophy, faClock, faSmile, faUsers } from '@fortawesome/free-solid-svg
 
 
 
+
 const Homepg = () => {
   return (
     <section id='home' className="maincontainer">
@@ -21,7 +22,11 @@ const Homepg = () => {
         <div className="centered">
           <h1>Welcome to Our Website</h1>
           <p>Discover amazing content and services</p>
-          <button> <Link to="/about">Explore</Link></button>
+          <button> 
+          <Link to="/about" className="menu-item">
+            <span className="explore-button">Explore</span>
+          </Link>
+          </button>
         </div>
       </div>
 
@@ -40,7 +45,7 @@ const Homepg = () => {
             <div className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis voluptatum perspiciatis nisi voluptatem ab assumenda debitis saepe dolores.
             </div>
             <div className="btn">
-              <button><Link to="/about">Know More</Link></button>
+              <button><Link to="/about" className="menu-item">Know More</Link></button>
             </div>
 
           </div>
@@ -164,7 +169,12 @@ const Homepg = () => {
 
         </div>
       </section>
+      <section id="testimonials" className='testimonials'>
+        <h2 className='heading-with-line'>Testimonials</h2>
+        <div >
 
+        </div>
+      </section>
     </section>
   );
 };
