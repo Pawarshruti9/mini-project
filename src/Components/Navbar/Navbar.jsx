@@ -45,9 +45,9 @@ const Navbar = () => {
             </li>
         </ul>
         <div className='nav-quote'>
-          <div className='text-center'>
-            <button type="submit" className="btn btn-primary" tabIndex="-1">Get Quote</button>
-            </div>
+          
+            <button type="submit" >Get Quote</button>
+            
         </div>
     </div>
   );
