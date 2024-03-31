@@ -30,7 +30,9 @@ const ContactForm = () => {
                         <label htmlFor="message">Message:</label>
                         <textarea id="message" name="message" required />
                     </div>
-                    <button type="submit">Submit</button>
+                    <div className='text-center'>
+                    <button type="submit" className="btn btn-primary" tabIndex="-1">Submit</button>
+                    </div>
                 </form>
                 {submitted && <div className="success-message">Form submitted successfully!</div>}
             </div>
@@ -40,3 +42,5 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
+

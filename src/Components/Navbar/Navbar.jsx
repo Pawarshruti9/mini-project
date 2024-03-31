@@ -45,10 +45,15 @@ const Navbar = () => {
             </li>
         </ul>
         <div className='nav-quote'>
-            <button>Get Quote</button>
+          <div className='text-center'>
+            <button type="submit" className="btn btn-primary" tabIndex="-1">Get Quote</button>
+            </div>
         </div>
     </div>
   );
 }
 
 export default Navbar;
+
+
+
