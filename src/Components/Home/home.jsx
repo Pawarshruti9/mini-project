@@ -14,7 +14,6 @@ import { faTrophy, faClock, faSmile, faUsers } from '@fortawesome/free-solid-svg
 
 
 
-
 const Homepg = () => {
   return (
     <section id='home' className="maincontainer">
