@@ -309,19 +309,25 @@ section{
   color: white;
 }
 
-.services-layer a{
+.services-layer .btn{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background: white;
   border-radius: 50%;
+  position: relative;
+  outline: none;
+  border: 2px solid white;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.services-layer a i{
+.services-layer .btn span{
   font-size: 2rem;
-  color: black;
+  color: #044a42;
 }
 
 

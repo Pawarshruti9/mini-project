@@ -99,9 +99,11 @@ const Homepg = () => {
             <div className="services-layer">
               <h4>Construction</h4>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt veniam, ipsum adipisci libero hic laboriosam porro ab sequi quia reprehenderit odit, illum omnis nulla voluptatem beatae excepturi. Laudantium, eius accusantium?</p>
-              <Link to="/Construction">
-                <a href=""><i className="bx bx-link-external"></i></a>
-              </Link>
+              <button className='btn'>
+                <Link to="/Construction">
+                <span class="material-symbols-outlined">arrow_outward</span>
+                </Link>
+              </button>
             </div>  
           </div>
 
@@ -111,9 +113,11 @@ const Homepg = () => {
             <div className="services-layer">
               <h4>Crusher</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reiciendis mollitia ut autem? Possimus delectus quis cum velit rerum temporibus explicabo consequuntur. Enim, quae voluptatibus veniam amet sapiente consequuntur ex.</p>
-              <Link to="/Crusher">
-                <a href=""><i className="bx bx-link-external"></i></a>
-              </Link>
+              <button className='btn'>
+                <Link to="/Crusher">
+                <span class="material-symbols-outlined">arrow_outward</span>
+                </Link>
+              </button>
             </div>  
           </div>
 
@@ -123,9 +127,11 @@ const Homepg = () => {
             <div className="services-layer">
               <h4>Bricks</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reiciendis mollitia ut autem? Possimus delectus quis cum velit rerum temporibus explicabo consequuntur. Enim, quae voluptatibus veniam amet sapiente consequuntur ex.</p>
-              <Link to="/Bricks">
-                <a href=""><i className="bx bx-link-external"></i></a>
-              </Link>
+              <button className='btn'>
+                <Link to="/Bricks">
+                <span class="material-symbols-outlined">arrow_outward</span>
+                </Link>
+              </button>
             </div>  
           </div>
 
@@ -135,9 +141,11 @@ const Homepg = () => {
             <div className="services-layer">
               <h4>Agencies</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reiciendis mollitia ut autem? Possimus delectus quis cum velit rerum temporibus explicabo consequuntur. Enim, quae voluptatibus veniam amet sapiente consequuntur ex.</p>
-              <Link to="/Agencies">
-                <a href="#"><i className="bx bx-link-external"></i></a>
-              </Link>
+              <button className='btn'>
+                <Link to="/Agencies">
+                <span class="material-symbols-outlined">arrow_outward</span>
+                </Link>
+              </button>
             </div>  
           </div>
 
@@ -147,9 +155,11 @@ const Homepg = () => {
             <div className="services-layer">
               <h4>Enterprises</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reiciendis mollitia ut autem? Possimus delectus quis cum velit rerum temporibus explicabo consequuntur. Enim, quae voluptatibus veniam amet sapiente consequuntur ex.</p>
-              <Link to="/Enterprises">
-                <a href="#"><i className="bx bx-link-external"></i></a>
-              </Link>
+              <button className='btn'>
+                <Link to="/Enterprises">
+                <span class="material-symbols-outlined">arrow_outward</span>
+                </Link>
+              </button>
             </div>  
           </div>
 
@@ -159,9 +169,11 @@ const Homepg = () => {
             <div className="services-layer">
               <h4>Energy</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reiciendis mollitia ut autem? Possimus delectus quis cum velit rerum temporibus explicabo consequuntur. Enim, quae voluptatibus veniam amet sapiente consequuntur ex.</p>
-              <Link to="/Energy">
-                <a href="#"><i className="bx bx-link-external"></i></a>
-              </Link>
+              <button className='btn'>
+                <Link to="/Energy">
+                <span class="material-symbols-outlined">arrow_outward</span>
+                </Link>
+              </button>
             </div>  
           </div>
 
