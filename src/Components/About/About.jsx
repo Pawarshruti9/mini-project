@@ -112,18 +112,15 @@ return (
                   <span class="material-symbols-outlined">location_on</span>
                 </div>
                 <div className='name'>
-                  58, XYZ Apartment, Yamai Office, Saat rasta, VIP Road, Solapur 
+                163/3 Venkatesh Appartment Saat Rasta Railway Lines Solapur, Maharashtra, 413001 India 
                 </div> 
-              </div> <picture>
-                <source media="(min-width: )" srcset="" />
-                <img src="" alt="" />
-              </picture>
+              </div>
               <div className='info'>
                 <div className='icon'>
                 <span class="material-symbols-outlined">mail</span>
                 </div>
                 <div className='name'>
-                  yamaiconstruction.9099@gmail.com 
+                  yamaigroup99@gmail.com
                 </div>
               </div> <br />
               <div className='info'>
@@ -131,7 +128,7 @@ return (
                   <span class="material-symbols-outlined">call</span>
                 </div>
                 <div className='name'>
-                  843 805-6090 
+                   095613 34999 
                 </div>
               </div>
             </div>
