@@ -14,7 +14,6 @@ import { faTrophy, faClock, faSmile, faUsers } from '@fortawesome/free-solid-svg
 
 
 
-
 const Homepg = () => {
   return (
     <section id='home' className="maincontainer">
@@ -100,7 +99,9 @@ const Homepg = () => {
               <h4>Construction</h4>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt veniam, ipsum adipisci libero hic laboriosam porro ab sequi quia reprehenderit odit, illum omnis nulla voluptatem beatae excepturi. Laudantium, eius accusantium?</p>
               <Link to="/Construction">
-                <a href=""><i className="bx bx-link-external"></i></a>
+                <a href=""><i className="bx bx-link-external"></i>
+                
+                </a>
               </Link>
             </div>  
           </div>

@@ -60,7 +60,7 @@ const Footerpg = () => {
               <a href="/#about">About</a>
               <a href="/#services">Services</a>
               <a href="/">Contact us</a>
-              <a href="">Testimonials</a>
+              <a href="/#testimonials">Testimonials</a>
 
             </ul>
           </div>
