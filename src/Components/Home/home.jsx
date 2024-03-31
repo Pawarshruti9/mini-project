@@ -100,7 +100,7 @@ const Homepg = () => {
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt veniam, ipsum adipisci libero hic laboriosam porro ab sequi quia reprehenderit odit, illum omnis nulla voluptatem beatae excepturi. Laudantium, eius accusantium?</p>
               <button className='btn'>
                 <Link to="/Construction">
-                <span class="material-symbols-outlined">arrow_outward</span>
+                <span class="material-symbols-outlined">more_up</span>
                 </Link>
               </button>
             </div>  
@@ -114,7 +114,7 @@ const Homepg = () => {
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reiciendis mollitia ut autem? Possimus delectus quis cum velit rerum temporibus explicabo consequuntur. Enim, quae voluptatibus veniam amet sapiente consequuntur ex.</p>
               <button className='btn'>
                 <Link to="/Crusher">
-                <span class="material-symbols-outlined">arrow_outward</span>
+                <span class="material-symbols-outlined">more_up</span>
                 </Link>
               </button>
             </div>  
@@ -128,7 +128,7 @@ const Homepg = () => {
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reiciendis mollitia ut autem? Possimus delectus quis cum velit rerum temporibus explicabo consequuntur. Enim, quae voluptatibus veniam amet sapiente consequuntur ex.</p>
               <button className='btn'>
                 <Link to="/Bricks">
-                <span class="material-symbols-outlined">arrow_outward</span>
+                <span class="material-symbols-outlined">more_up</span>
                 </Link>
               </button>
             </div>  
@@ -142,7 +142,7 @@ const Homepg = () => {
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reiciendis mollitia ut autem? Possimus delectus quis cum velit rerum temporibus explicabo consequuntur. Enim, quae voluptatibus veniam amet sapiente consequuntur ex.</p>
               <button className='btn'>
                 <Link to="/Agencies">
-                <span class="material-symbols-outlined">arrow_outward</span>
+                <span class="material-symbols-outlined">more_up</span>
                 </Link>
               </button>
             </div>  
@@ -156,7 +156,7 @@ const Homepg = () => {
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reiciendis mollitia ut autem? Possimus delectus quis cum velit rerum temporibus explicabo consequuntur. Enim, quae voluptatibus veniam amet sapiente consequuntur ex.</p>
               <button className='btn'>
                 <Link to="/Enterprises">
-                <span class="material-symbols-outlined">arrow_outward</span>
+                <span class="material-symbols-outlined">more_up</span>
                 </Link>
               </button>
             </div>  
@@ -170,7 +170,7 @@ const Homepg = () => {
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reiciendis mollitia ut autem? Possimus delectus quis cum velit rerum temporibus explicabo consequuntur. Enim, quae voluptatibus veniam amet sapiente consequuntur ex.</p>
               <button className='btn'>
                 <Link to="/Energy">
-                <span class="material-symbols-outlined">arrow_outward</span>
+                <span class="material-symbols-outlined">more_up</span>
                 </Link>
               </button>
             </div>  
