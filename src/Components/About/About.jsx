@@ -1,13 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect , useState } from 'react';
 import "./About.css"
 import Footerpg from '../Footer/Footer';
-import rod from '../Assets/rod.jpg';
 import mixer1 from '../Assets/mixer1.jpg';
-import mixer2 from '../Assets/mixer2.jpg';
 import site from '../Assets/site.jpg';
+import rod from '../Assets/rod.jpg';
+import cement from '../Assets/cement.jpg';
+import mixer from '../Assets/mixer.jpg'
+import { data } from "./Accordion/data";
+import { Accordion } from "./Accordion/Accordion";
 
 const Aboutus = () => {
+
 return (
       <div>
         <div className='aboutcompany'>
@@ -30,14 +33,19 @@ return (
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque odio, eligendi similique quisquam officia. Lorem ipsum, dolor sit amet consectetur adipisicing elit.                
               </p>
             </div>
-            <div className='missionimage'>
-              <img className='img2' src={site} alt="" />
+            <div class='missionimage'>
+              <img class='img2' src={site} alt="" />
+              <div class="img3-container">
+                <img class='img3' src={rod} alt="" />
+                <img class='img3' src={cement} alt="" />
+              </div>
             </div>
+
           </div>
           
           <div className='aboutvision'>
             <div className='visionimage'>
-              <img className='img2' src={site} alt="" />
+              <img className='img2' src={mixer1} alt="" />
             </div>
             <div className='visioncontent'>
               <h3>Our Vision</h3>
@@ -48,32 +56,87 @@ return (
             </div>
           </div>
 
-          <div>
-            <h3>Our Services</h3>
-            <ul>
-              <li>General Contracting: From project inception to completion, we oversee every aspect of the construction process with precision and expertise.</li>
-              <li>Design-Build: Streamline your project by combining the design and construction phases into one seamless process, saving time and resources.</li>
-              <li>Construction Management: Our experienced team provides professional construction management services, ensuring efficient project delivery within budget and on schedule.</li>
-              <li>Renovation and Remodeling: Transform existing spaces into functional and aesthetically pleasing environments with our renovation and remodeling services.</li>
-              <li>Green Building Solutions: We are committed to sustainable construction practices, offering green building solutions to minimize environmental impact and maximize energy efficiency.</li>
-            </ul>
+          <div className='aboutgoal'>
+            <div className='container'>
+              <h4>Expert Worker</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sapiente voluptas adipisci nemo vitae! Modi atque ipsam quae minima reiciendis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, asperiores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quasi alias illum nobis! Consequatur amet placeat minima quam fugit dolorem reprehenderit odio quibusdam, rerum dicta pariatur dolor debitis itaque neque.</p>
+            </div>
+            <div className='container'>
+              <h4>Quality Work</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sapiente voluptas adipisci nemo vitae! Modi atque ipsam quae minima reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, molestias! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et doloribus illo eum dicta vero placeat perspiciatis molestiae, eveniet iure soluta natus, id exercitationem asperiores quas doloremque ipsa provident quos repellat!  </p>
+            </div>
+            <div className='container'>
+              <h4>24/7 Support</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sapiente voluptas adipisci nemo vitae! Modi atque ipsam quae minima reiciendis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, deleniti. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat veniam numquam vitae? Quam veniam quos libero nobis, quasi dolores quae repudiandae. Unde ad dicta fuga nihil explicabo, quae tempore.</p>
+            </div>
+          </div>
+          
+          <div className='aboutservices'>
+            <div className='servicescontent'>
+              <h3>Our Services</h3>
+              {data.map((section, index) => (
+                <Accordion key={index} section={section} />
+              ))}
+            </div>
+            <div className='servicesimage'>
+              <img src={mixer} alt="" />
+            </div>
           </div>
 
-          <div>
-            <h3>Why Choose ABC Construction?</h3>
-            <ul>
-              <li>Experienced Team: Our team of skilled professionals brings years of experience and expertise to every project.</li>
-              <li>Quality Craftsmanship: We are dedicated to delivering superior craftsmanship and exceptional results that stand the test of time.</li>
-              <li>Customer-Centric Approach: We prioritize open communication, collaboration, and customer satisfaction throughout the construction process.</li>
-              <li>Safety First: Safety is our top priority, and we adhere to the highest standards of safety protocols to ensure a secure working environment for all.</li>
-            </ul>
+          <div className='aboutimp'>
+            <div className='imp1'>
+              <h3>Why Choose ABC Construction?</h3>
+                <div className='bullet'>
+                  <ul>
+                    <li>Experienced Team: Our team of skilled professionals brings years of experience and expertise to every project.</li>
+                    <li>Quality Craftsmanship: We are dedicated to delivering superior craftsmanship and exceptional results that stand the test of time.</li>
+                    <li>Customer-Centric Approach: We prioritize open communication, collaboration, and customer satisfaction throughout the construction process.</li>
+                    <li>Safety First: Safety is our top priority, and we adhere to the highest standards of safety protocols to ensure a secure working environment for all.</li>
+                  </ul>
+              </div>
+            </div>
+
+            <div className='imp2'>
+              <h3>Our Infrastructure</h3>
+              <p>
+              We are authoritative in designing the qualitative signboard and nameplate and are well-integrated work set up is our key to growth. Our infrastructure is scattered over a large area. Our manufacturing units are parted into manufacturing, packaging, designing, transportation, and distribution units that are headed by trained professionals.
+              </p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur quaerat debitis explicabo cum facere? Ipsam laboriosam quasi perspiciatis nostrum inventore deserunt odio blanditiis esse eaque ullam. Distinctio totam, laboriosam minima quo esse rem ipsum pariatur.</p>
+            </div>
+            <div className='imp3'>
+              <h3>Contact Us</h3>
+              <p>Ready to embark on your next construction project? Contact ABC Construction today to learn more about our services and how we can bring your vision to life. Let's build something incredible together!
+              </p>
+              <div className='info'>
+                <div className='icon'>
+                  <span class="material-symbols-outlined">location_on</span>
+                </div>
+                <div className='name'>
+                  58, XYZ Apartment, Yamai Office, Saat rasta, VIP Road, Solapur 
+                </div> 
+              </div> <picture>
+                <source media="(min-width: )" srcset="" />
+                <img src="" alt="" />
+              </picture>
+              <div className='info'>
+                <div className='icon'>
+                <span class="material-symbols-outlined">mail</span>
+                </div>
+                <div className='name'>
+                  yamaiconstruction.9099@gmail.com 
+                </div>
+              </div> <br />
+              <div className='info'>
+                <div className='icon'>
+                  <span class="material-symbols-outlined">call</span>
+                </div>
+                <div className='name'>
+                  843 805-6090 
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <h3>Contact Us</h3>
-            <p>Ready to embark on your next construction project? Contact ABC Construction today to learn more about our services and how we can bring your vision to life. Let's build something incredible together!</p>
-            {/* Include contact information */}
-          </div>
           </div>
         </div>
         <Footerpg/>
