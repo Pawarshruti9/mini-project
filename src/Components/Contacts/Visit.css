@@ -18,7 +18,6 @@
   .contactimage img {
     width: 800px;
     height: 600px;
-    /* object-fit: cover; */
   }
   
   .contactcontent .contactimage::after {
@@ -28,7 +27,7 @@
     left: 0;
     width: 800px;
     height: 600px;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity as needed */
+    background-color: rgba(0, 0, 0, 0.7); 
   }
   
   .contactcontent .content {
@@ -36,7 +35,7 @@
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; /* Set the text color to white for better visibility */
+    color: white; 
     text-align: center;
     z-index: 1;
     width: 90%;
@@ -64,7 +63,6 @@
     margin-bottom: 10px;
     display: flex;
     align-items: start; 
-    /* justify-content: space-between;  */
   }
   
   .content .information .icon span{
@@ -84,7 +82,6 @@
   }
   
   .contact-container {
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,13 +92,14 @@
   form {
     padding: 20px;  
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     width: 600px;
+    height: 580px;
   }
     
-    /* Form input fields */
+    
   form div {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   input[type="text"],
   input[type="email"],
@@ -115,42 +113,59 @@
     box-sizing: border-box;
     background-color: #eeeeee;
   }
-    
-  textarea {
-    height: 120px;
-    background-color: #eeeeee;
-  }
-    
-    /* Submit button */
-  button[type="submit"] {
-    background-color: #6db193;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 20%; /* Adjust width as needed */
-    margin-left: 240px;
-  }
-    
-  button[type="submit"]:hover {
-    background-color: #295f4e;
-  }
-    
-  h2{
-    font-size: xx-large;
-    justify-content: center;
+
+  .inline-inputs {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-  }
-  
-  .success-message {
-    background-color: #dff0d8; /* Light green background color */
-    color: #3c763d; /* Dark green text color */
-    border: 1px solid #d6e9c6; /* Border color */
-    padding: 10px; /* Padding around the message */
-    margin-top: 10px; /* Spacing from the form */
-    border-radius: 5px; /* Rounded corners */
-  }
-  
+}
+
+.inline-inputs > div {
+    flex: 1;
+    margin-right: 10px; 
+}
+
+.inline-inputs > div:last-child {
+    margin-right: 0; 
+}
+
+    
+textarea {
+  height: 120px;
+  background-color: #eeeeee;
+}
+    
+   
+button[type="submit"] {
+  background-color: #6db193;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 20%; 
+  margin-left: 240px;
+}
+    
+button[type="submit"]:hover {
+  background-color: #295f4e;
+}
+    
+h2{
+  font-size: xx-large;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+ 
+.success-message {
+  background-color: #dff0d8; 
+  color: #3c763d; 
+  border: 1px solid #d6e9c6; 
+  /* padding: 10px;  */
+  margin-top: 20px; 
+  margin-left: 165px;
+  border-radius: 5px; 
+  width: 250px;
+}
   
