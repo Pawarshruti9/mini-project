@@ -122,3 +122,7 @@
 .contact:hover{
         color: #c37857;   
 }
+.menu-item {
+    color: inherit;
+    text-decoration: inherit;
+  }

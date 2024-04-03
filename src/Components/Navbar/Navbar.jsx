@@ -49,7 +49,7 @@ const Navbar = () => {
         </ul>
         <div className='nav-quote'>
           
-            <button type="submit" >Get Quote</button>
+            <button  type="submit" ><Link to='/quotation' className='menu-item'>Get Quote</Link></button>
             
         </div>
     </div>
