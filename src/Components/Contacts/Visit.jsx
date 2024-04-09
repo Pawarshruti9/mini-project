@@ -1,8 +1,8 @@
 import React from 'react';
 import Footerpg from '../Footer/Footer';
 import { useState } from 'react';
-import mixer1 from '../Assets/mixer1.jpg';
 import "./Visit.css"
+import bg from '../Assets/background.jpg';
 
 
 const Visit = () => {
@@ -15,9 +15,13 @@ const Visit = () => {
 
     return (
         <div>
+            <div className="topimage">
+                <div className="overlay"></div>
+                <div className="heading"><h2>Contact Yamai Group</h2></div> 
+            </div>
             <div className='contactcontent'>
                 <div className='contactimage'>
-                    <img className='img2' src={mixer1} alt="" />
+                    <img className='img2' src={bg} alt="" />
                     <div className='content'>
                         <div className='paragraph'>
                             <h3>Yamai Group of Construction</h3>
@@ -64,22 +68,23 @@ const Visit = () => {
                         <h2>Visit Us</h2>
                         <div className="inline-inputs">
                             <div>
-                                <label htmlFor="name">Name:</label>
+                                <label htmlFor="name">Name*</label>
                                 <input type="text" id="name1" name="name1" required />
                             </div>
                             <div>
-                                <label htmlFor="email">Email:</label>
+                                <label htmlFor="email">Email*</label>
                                 <input type="email" id="email" name="email" required />
                             </div>
                         </div>
                         <div className="inline-inputs">
                             <div>
-                                <label htmlFor="date">Date:</label>
+                                <label htmlFor="date">Date*</label>
                                 <input type="date" id="date" name="date" required />
                             </div>
                             <div>
-                                <label htmlFor="service">Select a Service:</label>
+                                <label htmlFor="service">Select a Service*</label>
                                 <select id="service" name="service">
+                                    <option value="service0">- Select -</option>
                                     <option value="service1">Yamai Construction</option>
                                     <option value="service2">Yamai Bricks</option>
                                     <option value="service3">Yamai Energy</option>
@@ -90,16 +95,16 @@ const Visit = () => {
                             </div>
                         </div>
                         <div>
-                            <label htmlFor="message">Company name:</label>
+                            <label htmlFor="message">Company name</label>
                             <input type="company" id="company" name="company" required />
                         </div>
                         <div>
-                            <label htmlFor="message">Message:</label>
+                            <label htmlFor="message">Message*</label>
                             <textarea id="message" name="message" required />
                         </div>
                         
                         <button type="submit">Submit</button>
-                        {submitted && <div className="success-message">Form submitted successfully!</div>}
+                        {/* {submitted && <div className="success-message">Form submitted successfully!</div>} */}
                     </form>
                 </div>
             </div>

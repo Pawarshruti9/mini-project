@@ -1,3 +1,48 @@
+.topimage {
+  padding: 80px; 
+  width: 89.45%; 
+  height: 230px; 
+  position: relative;
+}
+
+.topimage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Components/Assets/contacttop.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.topimage .heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topimage .heading h2 {
+  font-size: 70px;
+  color: white;
+  /* justify-content: center;
+  display: flex;
+  align-items: center; */
+  margin: 0;
+}
+
 .contactcontent {
     display: flex;
     align-items: stretch;
@@ -129,6 +174,10 @@
     margin-right: 0; 
 }
 
+label {
+  color: #01352c;
+  font-weight: 600;
+}
     
 textarea {
   height: 120px;
@@ -158,14 +207,13 @@ h2{
   align-items: center;
 }
  
-.success-message {
+/* .success-message {
   background-color: #dff0d8; 
   color: #3c763d; 
   border: 1px solid #d6e9c6; 
-  /* padding: 10px;  */
   margin-top: 20px; 
   margin-left: 165px;
   border-radius: 5px; 
   width: 250px;
-}
+} */
   

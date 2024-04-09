@@ -7,7 +7,8 @@ return (
 <div>
 <h1>Construction Page</h1>
 <p>This is the Construction page content.</p>
-<Footerpg/>
+<div><Footerpg/></div>
+
 </div>
 );
 };

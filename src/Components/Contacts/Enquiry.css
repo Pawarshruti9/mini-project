@@ -1,3 +1,48 @@
+.topimage {
+  padding: 80px; 
+  width: 89.45%; 
+  height: 230px; 
+  position: relative;
+}
+
+.topimage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Components/Assets/contacttop.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.topimage .heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topimage .heading h2 {
+  font-size: 70px;
+  color: white;
+  /* justify-content: center;
+  display: flex;
+  align-items: center; */
+  margin: 0;
+}
+
 .contactcontent {
   display: flex;
   align-items: stretch;
@@ -36,7 +81,7 @@
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white; /* Set the text color to white for better visibility */
+  color: white; 
   text-align: center;
   z-index: 1;
   width: 90%;
@@ -93,10 +138,11 @@
 }
   
 form {
-  padding: 20px;  
+  padding: 30px;  
   align-items: center;
   margin-bottom: 40px;
   width: 600px;
+  margin-top: 20px;
 }
   
   /* Form input fields */
@@ -105,6 +151,7 @@ form div {
 }
 input[type="text"],
 input[type="email"],
+input[type="phone"],
 textarea {
   width: 100%;
   padding: 10px;
@@ -112,6 +159,11 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box;
   background-color: #eeeeee;
+}
+
+label {
+  color: #01352c;
+  font-weight: 600;
 }
   
 textarea {
@@ -134,20 +186,14 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #295f4e;
 }
-  
-h2{
-  font-size: xx-large;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
 
-.success-message {
-  background-color: #dff0d8; /* Light green background color */
-  color: #3c763d; /* Dark green text color */
-  border: 1px solid #d6e9c6; /* Border color */
-  padding: 10px; /* Padding around the message */
-  margin-top: 10px; /* Spacing from the form */
-  border-radius: 5px; /* Rounded corners */
-}
+
+/* .success-message {
+  background-color: #dff0d8; 
+  color: #3c763d; 
+  border: 1px solid #d6e9c6; 
+  padding: 10px; 
+  margin-top: 10px; 
+  border-radius: 5px;
+} */
 

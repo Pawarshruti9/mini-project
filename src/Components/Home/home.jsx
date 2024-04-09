@@ -7,12 +7,11 @@ import bricks from '../Assets/bricks.jpg';
 import agencies from '../Assets/agencies.jpg';
 import enterprises from '../Assets/enterprises.jpg';
 import energy from '../Assets/energy.jpg';
-import about from '../Assets/about.jpg'
+// import about from '../Assets/about.jpg'
 import CountUp from "react-countup";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrophy, faClock, faSmile, faUsers } from '@fortawesome/free-solid-svg-icons'; // Import different icons
-
-
+// import Clients from './Clients';
 
 const Homepg = () => {
   return (
@@ -95,6 +94,7 @@ const Homepg = () => {
           <div className="services-box">
             <img src= {construction} alt="" />
             <h3>Yamai Construction</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, sint.</p>
             <div className="services-layer">
               <h4>Construction</h4>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt veniam, ipsum adipisci libero hic laboriosam porro ab sequi quia reprehenderit odit, illum omnis nulla voluptatem beatae excepturi. Laudantium, eius accusantium?</p>
@@ -109,6 +109,7 @@ const Homepg = () => {
           <div className="services-box">
             <img src={crusher} alt="" />
             <h3>Yamai Stone Crusher</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, sint.</p>
             <div className="services-layer">
               <h4>Crusher</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reiciendis mollitia ut autem? Possimus delectus quis cum velit rerum temporibus explicabo consequuntur. Enim, quae voluptatibus veniam amet sapiente consequuntur ex.</p>
@@ -123,6 +124,7 @@ const Homepg = () => {
           <div className="services-box">
             <img src={bricks} alt="" />
             <h3>Yamai Bricks</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, sint.</p>
             <div className="services-layer">
               <h4>Bricks</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reiciendis mollitia ut autem? Possimus delectus quis cum velit rerum temporibus explicabo consequuntur. Enim, quae voluptatibus veniam amet sapiente consequuntur ex.</p>
@@ -137,6 +139,7 @@ const Homepg = () => {
           <div className="services-box">
             <img src={agencies} alt="" />
             <h3>Shraddha Agencies</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, sint.</p>
             <div className="services-layer">
               <h4>Agencies</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reiciendis mollitia ut autem? Possimus delectus quis cum velit rerum temporibus explicabo consequuntur. Enim, quae voluptatibus veniam amet sapiente consequuntur ex.</p>
@@ -151,6 +154,7 @@ const Homepg = () => {
           <div className="services-box">
             <img src={enterprises} alt="" />
             <h3>Shruti Enterprises</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, sint.</p>
             <div className="services-layer">
               <h4>Enterprises</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reiciendis mollitia ut autem? Possimus delectus quis cum velit rerum temporibus explicabo consequuntur. Enim, quae voluptatibus veniam amet sapiente consequuntur ex.</p>
@@ -165,6 +169,7 @@ const Homepg = () => {
           <div className="services-box">
             <img src={energy} alt="" />
             <h3>Yamai Enerygy</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, sint.</p>
             <div className="services-layer">
               <h4>Energy</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat reiciendis mollitia ut autem? Possimus delectus quis cum velit rerum temporibus explicabo consequuntur. Enim, quae voluptatibus veniam amet sapiente consequuntur ex.</p>
@@ -183,8 +188,11 @@ const Homepg = () => {
       
       <section id="testimonials" className='testimonials'>
         <h2 className='heading-with-line'>Testimonials</h2>
-        <div >
-
+        <div className='testimonials-card'>
+          <h1>What <span>Our Customers</span> are Saying</h1>
+          <div>
+            
+          </div> 
         </div>
       </section>
     </section>

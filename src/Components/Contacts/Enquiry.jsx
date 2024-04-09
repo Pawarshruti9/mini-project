@@ -3,7 +3,7 @@ import './Enquiry.css'; // Import the CSS file
 
 import Footerpg from '../Footer/Footer';
 import { useState } from 'react';
-import mixer1 from '../Assets/mixer1.jpg';
+import bg from '../Assets/background.jpg';
 
 
 const ContactForm = () => {
@@ -16,9 +16,13 @@ const ContactForm = () => {
 
     return (
         <div>
+            <div className="topimage">
+                <div className="overlay"></div>
+                <div className="heading"><h2>Contact Yamai Group</h2></div> 
+            </div>
             <div className='contactcontent'>
                 <div className='contactimage'>
-                    <img className='img2' src={mixer1} alt="" />
+                    <img className='img2' src={bg} alt="" />
                     <div className='content'>
                         <div className='paragraph'>
                             <h3>Yamai Group of Construction</h3>
@@ -62,22 +66,26 @@ const ContactForm = () => {
                 </div>
                 <div className="contact-container">
                     <form onSubmit={handleSubmit}>
-                        <h2>Contact Us</h2>
+                        <h2>Do Enquiry</h2>
                         <div>
-                            <label htmlFor="name">Name:</label>
+                            <label htmlFor="name">Name*</label>
                             <input type="text" id="name" name="name" required />
                         </div>
                         <div>
-                            <label htmlFor="email">Email:</label>
-                            <input type="email" id="email" name="email" required />
+                            <label htmlFor="phone">Phone No*</label>
+                            <input type="phone" id="phone" name="phone" />
                         </div>
                         <div>
-                            <label htmlFor="message">Message:</label>
+                            <label htmlFor="email">Email</label>
+                            <input type="email" id="email" name="email" />
+                        </div>
+                        <div>
+                            <label htmlFor="message">Message*</label>
                             <textarea id="message" name="message" required />
                         </div>
                         <button type="submit">Submit</button>
                     </form>
-                    {submitted && <div className="success-message">Form submitted successfully!</div>}
+                    {/* {submitted && <div className="success-message">Form submitted successfully!</div>} */}
                     </div>
                 </div>
             <Footerpg/>
