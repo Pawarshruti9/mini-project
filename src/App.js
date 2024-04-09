@@ -13,6 +13,7 @@ import Enterprises from './Components/Services/Enterprises';
 import Energy from './Components/Services/Energy';
 import Enquiry from './Components/Contacts/Enquiry';
 import Visit from './Components/Contacts/Visit';
+import Quotation from './Components/Contacts/Quotation';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/enquiry' element={<Enquiry />} />
           <Route path='/visit' element={<Visit />} />
+          <Route path='/quotation' element={<Quotation />} />
           <Route path='/Construction' element={<Construction />} />
           <Route path='/Crusher' element={<Crusher />} />
           <Route path='/Bricks' element={<Bricks />} />

@@ -34,10 +34,13 @@ const Navbar = () => {
                   <hr/>
                   <ul className="dropdown-menu">
                     <li onClick={() => handleContactItemClick("enquiry")}>
-                      <Link style={{ textDecoration: 'none' }} to='/enquiry'>Enquiry Form</Link>
+                      <Link style={{ textDecoration: 'none' }} to='/enquiry'>Enquiry at</Link>
                     </li>
                     <li onClick={() => handleContactItemClick("visit")}>
-                      <Link style={{ textDecoration: 'none' }} to='/visit'>Visit Form</Link>
+                      <Link style={{ textDecoration: 'none' }} to='/visit'>Visit Us</Link>
+                    </li>
+                    <li onClick={() => handleContactItemClick("quotation")}>
+                      <Link style={{ textDecoration: 'none' }} to='/quotation'>Get Quotation </Link>
                     </li>
                   </ul>
                   </>

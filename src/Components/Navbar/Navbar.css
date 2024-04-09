@@ -96,7 +96,7 @@
     /* z-index: 1000; */
     display: none;
     min-width: 130px; 
-    height: 70px;
+    height: 83px;
     padding: 6px;
     /* height: 200px; */
     background-color: white;
@@ -134,3 +134,7 @@
 .contact:hover{
         color: #c37857;   
 }
+.menu-item {
+    color: inherit;
+    text-decoration: inherit;
+  }
