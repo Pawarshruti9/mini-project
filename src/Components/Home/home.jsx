@@ -13,22 +13,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrophy, faClock, faSmile, faUsers } from '@fortawesome/free-solid-svg-icons'; // Import different icons
 // import Clients from './Clients';
 
+
+
+
 const Homepg = () => {
+  
   return (
     <section id='home' className="maincontainer">
       <div className="home-container">
         <div className="centered">
           <h1>Welcome to Our Website</h1>
           <p>Discover amazing content and services</p>
-          <button> 
+          <button className='btn1'> 
           <Link to="/about" className="menu-item">
-            <span className="explore-button">Explore</span>
+            <span className="explore-button ">Explore</span>
           </Link>
           </button>
         </div>
       </div>
-
       <div></div>
+
+     
 
       <section id='about' className='aboutus'>
         <div><h2 className='heading-with-line'>About Us</h2></div>
@@ -190,9 +195,8 @@ const Homepg = () => {
         <h2 className='heading-with-line'>Testimonials</h2>
         <div className='testimonials-card'>
           <h1>What <span>Our Customers</span> are Saying</h1>
-          <div>
-            
-          </div> 
+          
+         
         </div>
       </section>
     </section>

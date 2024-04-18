@@ -6,6 +6,15 @@ section{
   min-height: 80vh;
   padding: 4rem 6% 2rem;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #dddddd;
+}
 
 
 .home-container {
@@ -47,20 +56,132 @@ section{
   margin-bottom: 20px;
 }
 
-.home-container button {
-  padding: 10px 20px;
-  font-size: 30px;
-  background-color: #b7aeae;
+.btn1 {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #dddddd;
+  margin-top: 20px;
+  padding: 10px 30px;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 1s, box-shadow 1s;
+}
+.btn1:hover {
+  transition-delay: 0s, 1s;
   color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 75px;
+  box-shadow:
+      0 0 10px #7a7575,
+      0 0 20px #7a7575,
+      0 0 40px #7a7575,
+      0 0 80px #7a7575,
+      0 0 160px #7a7575;
+}
+.btn1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  background: #696666;
+  transform: skewX(35deg);
+  z-index: -1;
+  transition: 1s;
+}
+.btn1:hover:before {
+  width: 100%;
 }
 
-.home-container button:hover {
-  background-color: #0056b3;
+/* carousel */
+.container {
+  max-width: 124rem;
+  padding: 4rem 1rem;
+  margin: 0 auto;
 }
+
+.heading {
+  padding: 1rem 0;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.swiper_container {
+  height: 52rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.swiper-slide {
+  width: 37rem;
+  height: 42rem;
+  position: relative;
+}
+
+
+
+
+.swiper-slide img {
+  width: 37rem;
+  height: 42rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.slider-controler {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-controler .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+.slider-controler .slider-arrow {
+  background: var(--white);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.slider-controler .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
+}
+
+.slider-controler .slider-arrow::after {
+  content: '';
+}
+
+.swiper-pagination {
+  position: relative;
+  width: 15rem !important;
+  bottom: 1rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+/* caurosel end */
 
 .aboutus h2{
   font-size: 40px;
